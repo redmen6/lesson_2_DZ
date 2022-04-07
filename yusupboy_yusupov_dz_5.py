@@ -1,4 +1,5 @@
-some_list = [57.8, 46.51, 97, 57.8, 4546.51, 44.97, 567.85, 406.1, 907, 5557.8, 4651, 0.97, 2572, 4.51, 97.5, 57.08, 6.51, 9.7]
+from random import uniform
+some_list = [round(uniform(10, 100), 2) for _ in range(1, 16)]
 print(some_list)
 print(f' id до сортировки: {id(some_list)}')
 some_list.sort()
